@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import './App.css'
 import Home from './Channels/Home'
 import About from './Channels/About'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
