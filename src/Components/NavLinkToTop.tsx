@@ -7,7 +7,7 @@ function NavLinkToTop(props: any) {
 
   return (
     <>
-      <NavLink to={`${props.to}`} className={`lili-link-to-top ${props.className}`} id={`${props.id}`} onClick={handleClick} target={props.target}>
+      <NavLink to={`${props.to}`} className={`lili-link-to-top ${props.className}`} id={`${props.id}`} onLoad={handleClick} target={props.target}>
         {props.children}
       </NavLink>
     </>
