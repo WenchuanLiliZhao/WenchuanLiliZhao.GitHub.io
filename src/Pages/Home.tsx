@@ -1,7 +1,12 @@
-export default function Home() {
-  return (
+const Home = {
+  pageTitle: "Hello World!",
+  key: "",
+
+  pageElement: (
     <>
-    Home
+      This is HOOOOOOOOME
     </>
   )
 }
+
+export default Home

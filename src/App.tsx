@@ -1,16 +1,15 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Portfolio from './Pages/Portfolio'
+import Pages from './Pages/_PageIndex'
+
 
 function App() {
   return (
     <main className='App'>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path={`/${Portfolio.key}`} element={Portfolio.pageElement} />
+        {Object.values(Pages).map((item: any, index: any) => (
+          <Route path={`/${item.key}`} element={item.pageElement} key={`${item}${index}`} />
+        ))}
       </Routes>
     </main>
   )

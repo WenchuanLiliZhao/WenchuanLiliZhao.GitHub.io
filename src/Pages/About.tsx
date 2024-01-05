@@ -1,7 +1,12 @@
-export default function About() {
-  return (
+const About = {
+  pageTitle: "About",
+  key: "about",
+
+  pageElement: (
     <>
-    This is about
+      ABBBBBOUT
     </>
   )
 }
+
+export default About
