@@ -4,6 +4,8 @@ import Pages from './Pages/_PageIndex'
 
 
 function App() {
+  console.log(Pages.Home.pageTitle)
+
   return (
     <main className='App'>
       <Routes>

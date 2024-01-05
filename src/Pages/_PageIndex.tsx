@@ -3,9 +3,9 @@ import Home from "./Home";
 import Portfolio from "./Portfolio";
 
 const Pages = {
-  home: Home,
-  about: About,
-  portfolio: Portfolio,
+  Home,
+  About,
+  Portfolio,
 }
 
 export default Pages
