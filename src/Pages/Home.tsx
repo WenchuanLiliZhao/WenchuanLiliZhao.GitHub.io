@@ -4,7 +4,7 @@ const Home = {
 
   pageElement: (
     <>
-      This is HOOOOOOOOME
+      This is HOOOOOOOOME A
     </>
   )
 }
