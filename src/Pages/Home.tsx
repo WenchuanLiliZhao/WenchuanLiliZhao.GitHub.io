@@ -5,6 +5,10 @@ const Home = {
   pageElement: (
     <>
       This is HOOOOOOOOME A
+
+      <ul>
+        <li>ssss</li>
+      </ul>
     </>
   )
 }
