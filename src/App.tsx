@@ -7,14 +7,12 @@ import About from './Channels/About'
 function App() {
 
   return (
-    <BrowserRouter>
-      <main>
+      <main className="app">
         <Routes>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </main>
-    </BrowserRouter>
   )
 }
 
