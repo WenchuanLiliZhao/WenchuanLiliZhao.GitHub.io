@@ -1,0 +1,34 @@
+.article-divider {
+  display: block;
+
+  margin-top: calc(var(--book-font-size) * 2);
+
+  text-align: center;
+
+  .end-of-article-inner {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: calc(var(--book-font-size) * 2);
+
+    .bullet {
+      display: block;
+      width: 4px;
+      height: 4px;
+      background-color: var(--text-color-main-trans);
+      border-radius: 1000px;
+    }
+  }
+
+  &.hidden {
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    * {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

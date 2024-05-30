@@ -1,0 +1,54 @@
+.nbl-tag-container {
+  display: inline-block;
+
+  [class*="react-tag-"] {
+    display: flex;
+    gap: 2px;
+    --tag-size: 16px;
+    --tag-height: calc(var(--tag-size) * 1.5 * 1px);
+    --icon-color: var(--text-color-main-trans);
+    --icon-text-color: var(--text-color-main-trans);
+    --icon-bg-color: rgba(0, 0, 0, 0);
+    height: var(--tag-height);
+    background-color: var(--icon-bg-color);
+  
+    .icon-container {
+      position: relative;
+      width: var(--tag-size);
+      height: var(--tag-height);
+  
+      color: var(--icon-color);
+  
+      .icon {
+        font-size: var(--tag-size);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+      }
+    }
+  
+    .text {
+      font-size: var(--tag-size);
+      color: var(--icon-text-color);
+    }
+  
+    &[class*="-info"] {
+      --icon-color: rgba(0, 0, 0, 0.24);
+      --icon-text-color: var(--text-color-secondary-trans);
+    }
+  
+    &[class*="-fill"] {
+      --icon-color: white;
+      --icon-text-color: white;
+      --icon-bg-color: var(--text-color-main-trans);
+      padding: 4px 12px;
+      border-radius: 1000px;
+    }
+  
+    &.size-small {
+      --tag-size: 14px;
+    }
+  }
+}
+

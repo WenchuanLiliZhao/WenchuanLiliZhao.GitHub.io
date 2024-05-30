@@ -1,0 +1,25 @@
+.stories-section {
+  // padding: 48px;
+  // max-width: 1024px;
+  // box-sizing: content-box;
+  // margin: 0 auto;
+
+  .stories-section-headline-container {
+    
+    &:empty {
+      display: none;
+    }
+  }
+
+  .stories-section-list-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 24px;
+    gap: 24px 16px;
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+}
+

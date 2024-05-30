@@ -1,0 +1,50 @@
+.book-page {
+  max-width: 800px;
+  padding: 80px 48px;
+  padding-bottom: 240px;
+  margin: 0 auto;
+
+  @media only screen and (max-width:700px) {
+    padding-left: 32px;
+    padding-right: 32px;;
+  }
+
+  font-family: var(--font-family-article);
+  font-size: var(--book-font-size);
+
+  .ep-title-section {
+    h1.page-title {
+      font-size: 48px;
+      line-height: 1.25;
+      font-weight: bold;
+    }
+
+    .authors {
+      font-size: calc(var(--book-font-size) * (7/8));
+      margin-top: calc(var(--book-font-size) * (8/8));
+    }
+
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: calc(var(--book-font-size) * (8/8));
+    margin-top: calc(var(--book-font-size) * (8/8));
+    line-height: 1.75;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  h1, h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: calc(var(--book-font-size) * 1.5);
+    margin-top: calc(var(--book-font-size) * (8/8));
+    line-height: 1.5;
+  }
+}

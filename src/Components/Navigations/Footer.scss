@@ -1,0 +1,13 @@
+.nbl-footer {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  
+  .nbl-footer-items-container {
+    font-size: 14px;
+    color: var(--text-color-negative-trans);
+    text-align: right;
+
+    border-top: 1px solid var(--stroke-color-main-trans);
+    padding-top: 16px;
+  }
+}

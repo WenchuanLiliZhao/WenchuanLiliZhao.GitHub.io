@@ -1,0 +1,110 @@
+.inst-nav {
+  height: var(--nav-height);
+  padding: 0 16px;
+  position: fixed; width: 100%; top: 0; left: 0;
+  background-color: white;
+  z-index: var(--z-index-nav);
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .item-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 32px;
+    
+    .logo-bar {
+      margin-right: 24px;
+      display: flex;
+      gap: 4px;
+
+      .nbl-logo, .inst-logo, .cross {
+        align-self: center;
+      }
+
+      .nbl-logo, .inst-logo {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+
+        // box-shadow: 0 1px 4px rgba(black, 0.08), 0 0 2px rgba(black, 0.16);
+
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0; left: 0;
+        }
+      }
+
+      .cross {
+        width: 12px;
+        height: 12px;
+        position: relative;
+
+        .stick {
+          position: absolute;
+          width: 1px;
+          height: 10px;
+          background-color: var(--text-color-secondary-hex);
+          left: 50%; top: 50%;
+
+          &.a {
+            transform: translate(-50%, -50%) rotate(45deg);
+          }
+
+          &.b {
+            transform: translate(-50%, -50%) rotate(-45deg);
+          }
+        }
+      }
+
+    }
+
+    .items {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 24px;
+
+      .item {
+        color: var(--text-color-secondary-trans);
+        transition: 0.3s;
+
+        &.active {
+          color: var(--b-color);
+
+          box-shadow: inset 0 -2px 0 var(--b-color);
+        }
+      }
+    }
+  }
+
+  .user-bar {
+    align-self: center;
+
+    .avata {
+      width: 24px;
+      height: 24px;
+      background-color: rgba(black, 0.04);
+      border-radius: 1000px;
+      overflow: hidden;
+
+      position: relative;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0; left: 0;
+      }
+    }
+  }
+}

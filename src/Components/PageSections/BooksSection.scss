@@ -1,0 +1,20 @@
+.books-section {
+  .books-section-body {
+    .books-section-headline-container {
+
+    }
+
+    .books-section-list {
+      margin-top: 24px;
+
+      display: grid;
+
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      @media screen and (max-width: 700px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      gap: 24px 16px;
+    }
+  }
+}

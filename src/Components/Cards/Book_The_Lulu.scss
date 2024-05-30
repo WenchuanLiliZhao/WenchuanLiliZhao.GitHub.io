@@ -1,0 +1,39 @@
+.BookALulu {
+  position: relative;
+  padding-top: 150%;
+  overflow: hidden;
+  border-radius: 2px 8px 8px 2px;
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.16);
+
+  .BookALulu-3D-deco {
+    border-radius: 2px 6px 6px 2px;
+    position: absolute; width: 100%; height: 100%; top: 0; left: 0;
+    box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.16) inset, -2px 2px 0px 0px rgba(255, 255, 255, 0.25) inset;
+  }
+
+  .BookALulu-shader-1 {
+    position: absolute; height: 100%; top: 0; left: 0;
+    
+    width: 2px;
+
+    background-color: rgba(black, 0.16);
+  }
+
+  .BookALulu-light {
+    position: absolute; height: 100%; top: 0;
+    
+    width: 4px;
+    left: 2px;
+    
+    background-color: rgba(white, 0.16);
+  }
+
+  .BookALulu-shader-2 {
+    position: absolute; height: 100%; top: 0;
+    
+    width: 3px;
+    left: 6px;
+
+    background-color: rgba(black, 0.12);
+  }
+}

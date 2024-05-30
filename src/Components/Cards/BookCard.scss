@@ -1,0 +1,30 @@
+.book-card {
+  .book-card-cover {
+
+  }
+
+  .book-card-info {
+    margin-top: 8px;
+
+    .book-card-title {
+      font-family: var(--font-family-article);
+      font-weight: bold;
+    }
+
+    .book-card-authors-bar {
+      margin-top: 4px;
+      font-size: 14px;
+      color: var(--text-color-secondary-trans);
+
+      .book-card-author {
+        display: inline;
+
+        &:not(:first-of-type) {
+          &::before {
+            content: ", "
+          }
+        }
+      }
+    }
+  }
+}
